@@ -155,11 +155,6 @@ Import older model JSON via **Examples & files → Import JSON → Import model*
 ```bat
 .venv\Scripts\python.exe -m pytest -q
 ```
-
-On macOS/Linux: `.venv/bin/python -m pytest -q`. The final automated run passed **121 tests**. Consult `docs/VALIDATION.md` and `docs/test-results.txt` for actual results and tolerances. The browser acceptance script is optional and has a separate development dependency file; it is not required to run the app.
-
 ## Portfolio description
 
 “Developed an educational 2D structural-analysis workbench using Python, NumPy, Streamlit and Plotly. Implemented and validated direct-stiffness frame analysis, member releases, partial/path distributed loads and interior point forces. Added a visual model editor, section calculations and clearly bounded stress, translation and Euler screening checks. Compared analytical benchmarks and tested a complete browser modelling workflow.”
-
-Only claim personal implementation/understanding you can demonstrate. The interview guide explains which derivations and limitations to learn before presenting the project.
