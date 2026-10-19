@@ -36,16 +36,6 @@ For later runs, only the first and last commands are needed. Stop with **Ctrl+C*
 
 Use Python 3.10 or newer. Verification used Python 3.12; direct tested dependency versions are in `requirements-tested.txt`. Normal installation uses bounded compatible versions in `requirements.txt`.
 
-### macOS/Linux
-
-From the extracted project folder:
-
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m streamlit run app.py
-```
-
 ## Your first beam, without editing code
 
 1. Open **Examples & files**. Select **frame**, tick **Confirm replacing the current model**, then **Start empty model**.
