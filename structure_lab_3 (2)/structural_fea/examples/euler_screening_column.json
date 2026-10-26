@@ -1,0 +1,74 @@
+{
+  "type": "frame",
+  "nodes": [
+    {
+      "id": 1,
+      "x": 0.0,
+      "y": 0.0,
+      "support": "Pinned"
+    },
+    {
+      "id": 2,
+      "x": 0.0,
+      "y": 6.0,
+      "support": "Roller X"
+    }
+  ],
+  "elements": [
+    {
+      "id": 1,
+      "i": 1,
+      "j": 2,
+      "E": 210000000000.0,
+      "material": "Steel",
+      "fy": 355000000.0,
+      "density": 7850.0,
+      "section_shape": "Rectangle",
+      "section_dimensions": {
+        "b": 0.1,
+        "h": 0.2
+      },
+      "release_i": false,
+      "release_j": false,
+      "buckling_enabled": true,
+      "A": 0.020000000000000004,
+      "I": 6.666666666666668e-05,
+      "c_top": 0.1,
+      "c_bottom": 0.1,
+      "I_weak": 1.666666666666667e-05,
+      "effective_length_factor": 1.0,
+      "buckling_length": 6.0
+    }
+  ],
+  "cases": [
+    "Dead",
+    "Live"
+  ],
+  "nodal_loads": [
+    {
+      "case": "Dead",
+      "node": 2,
+      "fx": 0.0,
+      "fy": -100000.0,
+      "mz": 0.0,
+      "id": "P1"
+    }
+  ],
+  "udls": [],
+  "combinations": [
+    {
+      "name": "Service",
+      "case": "Dead",
+      "factor": 1.0
+    },
+    {
+      "name": "Service",
+      "case": "Live",
+      "factor": 1.0
+    }
+  ],
+  "distributed_loads": [],
+  "member_loads": [],
+  "deflection_limit": 0.025,
+  "schema_version": 3
+}
