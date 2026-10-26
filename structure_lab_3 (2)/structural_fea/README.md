@@ -1,4 +1,4 @@
-# Structure Lab 3 — Civil Engineering student project
+# Structure Analysis — Civil Engineering student project
 
 A second-year Civil Engineering learning project connecting structural mechanics with Python programming. The interactive workflow is inspired by the **model → assign → load → analyse → inspect** workflow of desktop frame software. It is not affiliated with SAP2000 and does not reproduce its interface or capabilities.
 
@@ -35,16 +35,6 @@ If the first line says the path cannot be found, open the extracted folder conta
 For later runs, only the first and last commands are needed. Stop with **Ctrl+C** in the terminal. Do not double-click `app.py`.
 
 Use Python 3.10 or newer. Verification used Python 3.12; direct tested dependency versions are in `requirements-tested.txt`. Normal installation uses bounded compatible versions in `requirements.txt`.
-
-### macOS/Linux
-
-From the extracted project folder:
-
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m streamlit run app.py
-```
 
 ## Your first beam, without editing code
 
@@ -123,8 +113,6 @@ All multipliers scale the entire active case/combination proportionally from zer
 
 ## How the code works
 
-Start with `docs/CODE_WALKTHROUGH.md` for a short reading guide. See `docs/THEORY.md` for the stiffness matrix, transformation and assembly, consistent loads, release condensation and exact recovery. Typical flow:
-
 1. Validate geometry, properties, references and load paths.
 2. Form local elastic stiffness k and consistent local load vector f.
 3. Condense released rotational DOFs in **both k and f**.
@@ -161,5 +149,3 @@ On macOS/Linux: `.venv/bin/python -m pytest -q`. The final automated run passed 
 ## Portfolio description
 
 “Developed an educational 2D structural-analysis workbench using Python, NumPy, Streamlit and Plotly. Implemented and validated direct-stiffness frame analysis, member releases, partial/path distributed loads and interior point forces. Added a visual model editor, section calculations and clearly bounded stress, translation and Euler screening checks. Compared analytical benchmarks and tested a complete browser modelling workflow.”
-
-Only claim personal implementation/understanding you can demonstrate. The interview guide explains which derivations and limitations to learn before presenting the project.
